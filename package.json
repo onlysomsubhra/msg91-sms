@@ -1,6 +1,6 @@
 {
   "name": "msg91-sms",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A small node.js library for msg91 sms api",
   "main": "msg91.js",
   "dependencies": {

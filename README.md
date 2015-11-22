@@ -1,6 +1,6 @@
 [![msg91-sms Logo](https://github.com/scionoftech/msg91-sms/blob/Development/image/msg.gif)](https://www.npmjs.com/package/msg91-sms)
 
-[msg91-sms v0.0.1](https://www.npmjs.com/package/msg91-sms)
+[msg91-sms v1.0.0](https://www.npmjs.com/package/msg91-sms)
 
 A small [node.js](http://nodejs.org) library for msg91 sms api.
 
