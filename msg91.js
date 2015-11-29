@@ -349,6 +349,25 @@ request(encodeurl, function (error, response, body) {
 });
 }
 
+//check balance
+module.exports.checkBalance=function(authkey,route,callback)
+{
+
+var url='http://api.msg91.com/api/sendhttp.php?authkey='+authkey+'&type='+route;
+var encodeurl=encodeURI(url);
+request(encodeurl, function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    
+    //check for error
+    CheckSmsError(body,function(response){
+  callback(response);
+    });
+  }
+
+});
+
+};
+
 
 
 //check for error response

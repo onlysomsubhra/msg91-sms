@@ -225,3 +225,12 @@ msg91.sendtoGroup(authkey,message,senderid,groupid,function(response){
 console.log(response);
 
 });
+
+//******************************************************check balance****************************************************//
+
+msg91.checkBalance(authkey,route,function(response){
+
+//get balance or the appropriate Error Message
+console.log(response);
+
+});
