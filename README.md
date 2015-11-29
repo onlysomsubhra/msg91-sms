@@ -495,7 +495,7 @@ console.log(response);
 
 ```
 
-#### Send sms
+#### Check balance
   ```js
 
 var msg91=require('msg91-sms');
