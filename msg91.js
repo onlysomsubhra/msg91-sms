@@ -353,7 +353,7 @@ request(encodeurl, function (error, response, body) {
 module.exports.checkBalance=function(authkey,route,callback)
 {
 
-var url='http://api.msg91.com/api/sendhttp.php?authkey='+authkey+'&type='+route;
+var url='http://api.msg91.com/api/balance.php?authkey='+authkey+'&type='+route;
 var encodeurl=encodeURI(url);
 request(encodeurl, function (error, response, body) {
   if (!error && response.statusCode == 200) {

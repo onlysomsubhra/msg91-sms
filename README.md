@@ -511,7 +511,7 @@ msg91.checkBalance(authkey,route,function(response){
 //get balance or the appropriate Error Message
 console.log(response);
 
-})
+});
 
 ```
 
