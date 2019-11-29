@@ -1,6 +1,14 @@
 var msg91=require('./msg91.js');
 
-//Authentication Key 
+//Psot Url
+var postURL='http://world.msg91.com/api/sendhttp.php';
+// Some Post URL //
+// Sample - http://api.msg91.com/api/sendhttp.php or http://world.msg91.com/api/sendhttp.php
+// sample - http://api.msg91.com/api/balance.php or http://world.msg91.com/api/balance.php
+// Sample - http://api.msg91.com/send_voice_mail.php or http://world.msg91.com/send_voice_mail.php
+
+
+//Authentication Key
 var authkey='';
 
 //for multiple numbers
@@ -51,81 +59,82 @@ var schtimeend='2015-12-13 23:42:20';
 
 //send to single number
 
-msg91.sendOne(authkey,number,message,senderid,route,dialcode,function(response){
+msg91.sendOne(postURL,authkey,number,message,senderid,route,dialcode,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
+
 });
 
 //send to multiple numbers
 
-msg91.sendMultiple(authkey,numbers,message,senderid,route,dialcode,function(response){
+/*msg91.sendMultiple(postURL,authkey,numbers,message,senderid,route,dialcode,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //******************************************Send sms with unicode**********************************************//
 
 //send to single number
 
-msg91.sendOnewithUnicode(authkey,number,message,senderid,route,dialcode,function(response){
+/*msg91.sendOnewithUnicode(postURL,authkey,number,message,senderid,route,dialcode,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //send to multiple numbers
 
-msg91.sendMultiplewithUnicode(authkey,numbers,message,senderid,route,dialcode,function(response){
+/*msg91.sendMultiplewithUnicode(postURL,authkey,numbers,message,senderid,route,dialcode,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 
 //******************************************Send flash message**********************************************//
 
 //send to single number
 
-msg91.sendOnewithFlash(authkey,number,message,senderid,route,dialcode,function(response){
+/*msg91.sendOnewithFlash(postURL,authkey,number,message,senderid,route,dialcode,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //send to multiple numbers
 
-msg91.sendMultiplewithFlash(authkey,numbers,message,senderid,route,dialcode,function(response){
+/*msg91.sendMultiplewithFlash(postURL,authkey,numbers,message,senderid,route,dialcode,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //******************************************Send sms and get json response**********************************************//
 
 //send to single number
 
-msg91.sendOneandGetJson(authkey,number,message,senderid,route,dialcode,function(response){
+msg91.sendOneandGetJson(postURL,authkey,number,message,senderid,route,dialcode,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
 });
 
 //send to multiple numbers
 
-msg91.sendMultipleandGetJson(authkey,numbers,messages,senderid,route,dialcode,function(response){
+/*msg91.sendMultipleandGetJson(postURL,authkey,numbers,messages,senderid,route,dialcode,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //******************************************Schedule sms**********************************************//
 
@@ -134,22 +143,21 @@ console.log(response);
 
 //send to single number
 
-msg91.scheduleOne(authkey,number,message,senderid,route,dialcode,date,time,function(response){
+/*msg91.scheduleOne(postURL,authkey,number,message,senderid,route,dialcode,date,time,function(response){
 
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
-
-});
+});*/
 
 //send to multiple numbers
 
-msg91.scheduleMultiple(authkey,numbers,message,senderid,route,dialcode,date,time,function(response){
+/*msg91.scheduleMultiple(postURL,authkey,numbers,message,senderid,route,dialcode,date,time,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //******************************************Schedule sms with unicode**********************************************//
 
@@ -158,22 +166,21 @@ console.log(response);
 
 //send to single number
 
-msg91.scheduleOnewithUnicode(authkey,number,message,senderid,route,dialcode,date,time,function(response){
+/*msg91.scheduleOnewithUnicode(postURL,authkey,number,message,senderid,route,dialcode,date,time,function(response){
 
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
-
-});
+});*/
 
 //send to multiple numbers
 
-msg91.scheduleMultiplewithUnicode(authkey,numbers,message,senderid,route,dialcode,date,time,function(response){
+/*msg91.scheduleMultiplewithUnicode(postURL,authkey,numbers,message,senderid,route,dialcode,date,time,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //*******************************************Voice sms***************************************************//
 
@@ -181,56 +188,56 @@ console.log(response);
 
 //send to single number
 
-msg91.sendOneVoiceSmsusingDraft(authkey,number,draft_file_name,senderno,route,campaign,duration,schtimestart,schtimeend,function(response){
+/*msg91.sendOneVoiceSmsusingDraft(postURL,authkey,number,draft_file_name,senderno,route,campaign,duration,schtimestart,schtimeend,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //send to multiple numebrs
 
-msg91.sendMVoiceSmsusingDraft(authkey,numbers,draft_file_name,senderno,route,campaign,duration,schtimestart,schtimeend,function(response){
+/*msg91.sendMVoiceSmsusingDraft(postURL,authkey,numbers,draft_file_name,senderno,route,campaign,duration,schtimestart,schtimeend,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //-------------send using url of file
 
 //send to single number
 
-msg91.sendVoiceSmsusingUrl(authkey,number,url_file_name,senderno,route,campaign,duration,schtimestart,schtimeend,function(response){
+/*msg91.sendVoiceSmsusingUrl(postURL,authkey,number,url_file_name,senderno,route,campaign,duration,schtimestart,schtimeend,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //send to multiple numebrs
 
-msg91.sendMVoiceSmsusingUrl(authkey,numbers,url_file_name,senderno,route,campaign,duration,schtimestart,schtimeend,function(response){
+/*msg91.sendMVoiceSmsusingUrl(postURL,authkey,numbers,url_file_name,senderno,route,campaign,duration,schtimestart,schtimeend,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //*************************************************************Send to Group******************************************************//
 
-msg91.sendtoGroup(authkey,message,senderid,groupid,function(response){
+/*msg91.sendtoGroup(postURL,authkey,message,senderid,groupid,function(response){
 
-//Returns Message ID, If Sent Successfully or the appropriate Error Message
-console.log(response);
+    //Returns Message ID, If Sent Successfully or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
 
 //******************************************************check balance****************************************************//
 
-msg91.checkBalance(authkey,route,function(response){
+/*msg91.checkBalance(postURL,authkey,route,function(response){
 
-//get balance or the appropriate Error Message
-console.log(response);
+    //get balance or the appropriate Error Message
+    console.log(response);
 
-});
+});*/
